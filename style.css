@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  background-color: #2c1810;
+  background-color: #eeeade;
   color: white;
   padding: 1rem 0;
   position: sticky;
@@ -30,6 +30,7 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #2d2411;
 }
 
 .menu {
@@ -38,7 +39,7 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: #2d2411;
   text-decoration: none;
   transition: color 0.3s;
 }
