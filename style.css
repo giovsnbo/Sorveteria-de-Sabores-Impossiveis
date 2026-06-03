@@ -12,12 +12,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f5e9;
+  background-color: #faf9f6;
 }
 
 .header {
   background-color: #eeeade;
-  color: white;
+  color:#faf9f6;
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -47,7 +47,7 @@ body {
 
 .botao-menu {
   color: #2d2411;
-  background-color: #eeeade;
+  background-color: #faf9f6;
   width: 100%;
   max-width: 400px;
   padding: 8px;
