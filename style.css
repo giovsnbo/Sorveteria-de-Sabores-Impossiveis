@@ -86,8 +86,8 @@ body {
 
 /* HERO - Flexbox para centralizar conteúdo */
 .hero {
-  background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)),
-    url(imagens/Gemini_Generated_Image_17eg8m17eg8m17eg.png);
+  background: url("imagens/saboooOOOOr.png");
+  background-size: cover;
   background-position: center;
   height: 450px;
   display: flex;
