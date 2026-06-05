@@ -35,7 +35,7 @@ body {
   align-items: center;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0 30px;
 }
 
 .logo {
@@ -108,6 +108,8 @@ body {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
+
+
 
 /* SEÇÃO DE PRODUTOS */
 .produtos{
