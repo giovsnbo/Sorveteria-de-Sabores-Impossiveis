@@ -86,15 +86,17 @@ body {
 
 /* HERO - Flexbox para centralizar conteúdo */
 .hero {
-  background: url("sabooOOOr.png") no-repeat;
+  background: url("saboooOOOOr.png");
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: #ecf2d8;
+  min-height: 80vh;
+  padding: 0 5%;
 }
 
 .hero-content h1 {
@@ -105,21 +107,6 @@ body {
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-}
-
-.btn-primary {
-  background-color: #d4a574;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #b8935f;
 }
 
 /* SEÇÃO DE PRODUTOS */
