@@ -89,14 +89,18 @@ body {
   background: url("imagens/saboooOOOOr.png");
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 650px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: left;
   color: #ecf2d8;
   min-height: 80vh;
   padding: 0 5%;
+}
+
+.hero-content{
+  color: #ecf2d8;
+  text-align: left;
 }
 
 .hero-content h1 {
@@ -109,7 +113,16 @@ body {
   margin-bottom: 2rem;
 }
 
-
+.hero-wave {
+  background-image: url("imagens/ponta-hero.png");
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 200px;         
+  width: 100%;
+  margin-top: -1px; 
+  background-color: #f9f9f9;
+}
 
 /* SEÇÃO DE PRODUTOS */
 .produtos{
