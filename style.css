@@ -17,7 +17,7 @@ body {
   background-color: #f9f5e9;
 }
 
-.header {
+header {
   background-color: #E27396;
   color: #E27396;
   padding: 1rem 0;
@@ -27,6 +27,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* navbar */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -75,14 +76,14 @@ body {
 
 .botao-menu:hover {
   color: #B3DEE2;
-  
+  cursor: pointer;
 }
 
 .menu a {
   text-align: center;
 }
 
-/* HERO - Flexbox para centralizar conteúdo */
+/* hero-section */
 .hero {
   background: url("imagens/saboooOOOOr.png");
   background-size: cover;
@@ -123,8 +124,8 @@ body {
   background-color: #f9f9f9;
 }
 
-/* SEÇÃO DE PRODUTOS */
-.produtos{
+/* section -> destaques do mês */
+.sabores{
   padding: 4rem 0;
   background-color: #f9f9f9;
 }
@@ -132,12 +133,25 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #28a4d9;
+  color: #15a7b4;
   font-family: dynapuff;
 }
 
+/* section -> outros sabores */
+.outros-sabores{
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.cards{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .sorvete-destaques {
-    background-color: #dfdfcb; 
+    background-color: #fffdf4; 
     width: 350px;
     border-radius: 40px;
     padding: 30px 20px 50px 20px;
@@ -146,6 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
     transition: transform 0.3s;
 }
 
@@ -169,15 +184,16 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: linear-gradient(160deg, #3981ee 0%, #5b90e0 50%, #c2e1ff 100%);
+    background-color: #15a7b4;
 }
 
 .product-image {
     position: relative;
-    width: 100%;
+    width: 120%;
     height: auto;
     object-fit: contain;
     z-index: 2;
+    padding-bottom: 30px;
 }
 
 .card-content {
@@ -186,7 +202,7 @@ body {
 }
 
 .card-title {
-    color: #0d85b4; 
+    color: #1d7497; 
     font-size: 20px;
     font-family: "dynapuff";
     font-weight: 700;
@@ -195,7 +211,7 @@ body {
     text-align: left;
 }
 
-.card-description {
+.card-descricao {
     color: #30181c;
     font-size: 14px;
     line-height: 1.5;
@@ -203,9 +219,42 @@ body {
     text-align: left;
 }
 
-.cards{
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+/*footer*/
+
+footer{
+    background-color: #52c4ce;
+    padding: 3rem;
+    color: #f9f9f9;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section{
+    flex: 1;
+    min-width: 70px;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+.footer-section h4{
+    margin-bottom: 1rem;
+    color: #fffdf4;
+}
+
+.hr{
+  background-color: #ffffff;
+  border: none;
+  height: 1px;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding-top: 3rem;
+    color: #f9f5e9;
 }
