@@ -1,260 +1,317 @@
- @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap'); /*cinzel decorative */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap'); /*urbanist*/
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap'); /*dynapuff*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: urbanist;
-  letter-spacing: 1.5px; 
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+ /*cinzel decorative */
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+ /*urbanist*/
+ @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /*dynapuff*/
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: urbanist;
+   letter-spacing: 1.5px;
+ }
+
+ body {
+   font-family: urbanist;
+   letter-spacing: 1.5px;
+   line-height: 1.6;
+   color: #333;
+   background-color: #f9f5e9;
+ }
+
+ header {
+   background-color: #E27396;
+   color: #E27396;
+   padding: 1rem 0;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ /* navbar */
+ .nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 0 30px;
+ }
+
+ .logo {
+   font-family: "Cinzel Decorative";
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #ecf2d8;
+ }
+
+ .menu {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .botao-menu {
+   color: #ecf2d8;
+   font-weight: normal;
+   font-size: 1rem;
+   background-color: #E27396;
+   width: 100%;
+   max-width: 400px;
+   padding: 8px;
+   border: 2px solid #E27396;
+   border-radius: 45%;
+   text-align: center;
+   align-items: center;
+   transition: color 0.3s;
+ }
+
+
+ .botao-menu:focus {
+   border: 2.5px dotted #B3DEE2;
+   border-radius: 40%;
+   background-color: #E27396;
+   color: #B3DEE2;
+ }
+
+ .botao-menu:hover {
+   color: #B3DEE2;
+   cursor: pointer;
+ }
+
+ .menu a {
+   text-align: center;
+ }
+
+ /* hero-section */
+ .hero {
+   background: url("imagens/saboooOOOOr.png");
+   background-size: cover;
+   background-position: center;
+   height: 650px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #ecf2d8;
+   min-height: 80vh;
+   padding: 0 5%;
+ }
+
+ .hero-content {
+   color: #ecf2d8;
+   text-align: left;
+ }
+
+ .hero-content h1 {
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   font-family: "dynapuff";
+ }
+
+ .hero-content p {
+   font-size: 1.3rem;
+   margin-bottom: 2rem;
+ }
+
+ .hero-wave {
+   background-image: url("imagens/ponta-hero.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+   height: 200px;
+   width: 100%;
+   margin-top: -1px;
+   background-color: #f9f9f9;
+ }
+
+ /* section -> destaques do mês */
+ .sabores {
+   padding: 4rem 0;
+   background-color: #f9f9f9;
+ }
+
+ .section-title {
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 3rem;
+   color: #15a7b4;
+   font-family: dynapuff;
+ }
+
+ .cards {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+ .sorvete-destaques {
+   background-color: #fffdf4;
+   width: 350px;
+   border-radius: 40px;
+   padding: 30px 20px 50px 20px;
+   position: relative;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s;
+ }
+
+ .sorvete-destaques:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+ }
+
+ .image-container {
+   position: relative;
+   width: 240px;
+   height: 240px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 25px;
+ }
+
+ .gradient-circle {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background-color: #e27296;
+ }
+
+ .product-image {
+   position: relative;
+   width: 120%;
+   height: auto;
+   object-fit: contain;
+   z-index: 2;
+   padding-bottom: 30px;
+ }
+
+ .card-content {
+   width: 100%;
+   padding: 0 10px;
+ }
+
+ .card-title {
+   color: #c62769;
+   font-size: 20px;
+   font-family: "dynapuff";
+   font-weight: 700;
+   letter-spacing: -0.5px;
+   margin-bottom: 15px;
+   text-align: left;
+ }
+
+ .card-descricao {
+   color: #30181c;
+   font-size: 14px;
+   line-height: 1.5;
+   font-weight: 400;
+   text-align: left;
+ }
+
+ /* section -> outros sabores */
+ .outros-sabores {
+   background-color: #f9f9f9;
+  padding: 4rem 0;
 }
 
-body {
-  font-family: urbanist;
-  letter-spacing: 1.5px; 
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f5e9;
-}
-
-header {
-  background-color: #E27396;
-  color: #E27396;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* navbar */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1500px;
+.cards-outros{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3.5rem 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
-.logo {
-  font-family: "Cinzel Decorative";
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ecf2d8;
-}
-
-.menu {
+.card-outros{
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-outros:hover {
+  transform: scale(1.05);
+}
+
+.container-outros {
+  width: 160px;
+  height: 160px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
-.botao-menu {
-  color: #ecf2d8;
-  font-weight: normal;
-  font-size: 1rem;
-  background-color: #E27396;
+.image-outros {
   width: 100%;
-  max-width: 400px;
-  padding: 8px;
-  border: 2px solid #E27396;
-  border-radius: 45%;
-  text-align: center;
-  align-items: center;
-  transition: color 0.3s;
+  height: 100%;
+  object-fit: contain;
 }
 
-
-.botao-menu:focus {
-  border: 2.5px dotted #B3DEE2;
-  border-radius: 40%;
-  background-color: #E27396;
-  color: #B3DEE2;
+.title-outros {
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #006c76;
+  margin-bottom: 6px;
 }
 
-.botao-menu:hover {
-  color: #B3DEE2;
-  cursor: pointer;
+.descricao-outros {
+  font-family: "Urbanist";
+  font-size: 0.85rem;
+  color: #2a2020;
+  max-width: 200px;
+  line-height: 1.4;
+  margin-bottom: 0; 
 }
 
-.menu a {
-  text-align: center;
-}
+ /*footer*/
+ footer {
+   background-color: #52c4ce;
+   padding: 3rem;
+   color: #f9f9f9;
+ }
 
-/* hero-section */
-.hero {
-  background: url("imagens/saboooOOOOr.png");
-  background-size: cover;
-  background-position: center;
-  height: 650px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #ecf2d8;
-  min-height: 80vh;
-  padding: 0 5%;
-}
+ .footer-content {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 1rem;
+   margin-bottom: 1rem;
+ }
 
-.hero-content{
-  color: #ecf2d8;
-  text-align: left;
-}
+ .footer-section {
+   flex: 1;
+   min-width: 70px;
+   margin-bottom: 1rem;
+   margin-left: 5rem;
+ }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-family: "dynapuff";
-}
+ .footer-section h4 {
+   margin-bottom: 1rem;
+   color: #fffdf4;
+ }
 
-.hero-content p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
+ .hr {
+   background-color: #ffffff;
+   border: none;
+   height: 1px;
+ }
 
-.hero-wave {
-  background-image: url("imagens/ponta-hero.png");
-  background-size: 100% 100%; 
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  height: 200px;         
-  width: 100%;
-  margin-top: -1px; 
-  background-color: #f9f9f9;
-}
-
-/* section -> destaques do mês */
-.sabores{
-  padding: 4rem 0;
-  background-color: #f9f9f9;
-}
-.section-title{
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #15a7b4;
-  font-family: dynapuff;
-}
-
-/* section -> outros sabores */
-.outros-sabores{
-  background-color: #f9f9f9;
-  padding: 4rem 0;
-}
-
-.cards{
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.sorvete-destaques {
-    background-color: #fffdf4; 
-    width: 350px;
-    border-radius: 40px;
-    padding: 30px 20px 50px 20px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
-    transition: transform 0.3s;
-}
-
-.sorvete-destaques:hover{
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.image-container {
-    position: relative;
-    width: 240px;
-    height: 240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.gradient-circle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #15a7b4;
-}
-
-.product-image {
-    position: relative;
-    width: 120%;
-    height: auto;
-    object-fit: contain;
-    z-index: 2;
-    padding-bottom: 30px;
-}
-
-.card-content {
-    width: 100%;
-    padding: 0 10px;
-}
-
-.card-title {
-    color: #1d7497; 
-    font-size: 20px;
-    font-family: "dynapuff";
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.card-descricao {
-    color: #30181c;
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 400;
-    text-align: left;
-}
-
-/*footer*/
-
-footer{
-    background-color: #52c4ce;
-    padding: 3rem;
-    color: #f9f9f9;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.footer-section{
-    flex: 1;
-    min-width: 70px;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
-}
-
-.footer-section h4{
-    margin-bottom: 1rem;
-    color: #fffdf4;
-}
-
-.hr{
-  background-color: #ffffff;
-  border: none;
-  height: 1px;
-}
-
-.footer-bottom{
-    text-align: center;
-    padding-top: 3rem;
-    color: #f9f5e9;
-}
+ .footer-bottom {
+   text-align: center;
+   padding-top: 3rem;
+   color: #f9f5e9;
+ }
