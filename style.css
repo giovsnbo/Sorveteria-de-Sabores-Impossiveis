@@ -49,39 +49,39 @@
  }
 
  .menu {
-   display: flex;
-   gap: 2rem;
-   justify-content: center;
-   align-items: center;
- }
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
 
- .botao-menu {
-   color: #ecf2d8;
-   font-weight: normal;
-   font-size: 1rem;
-   background-color: #E27396;
-   width: 100%;
-   max-width: 400px;
-   padding: 8px;
-   border: 2px solid #E27396;
-   border-radius: 45%;
-   text-align: center;
-   align-items: center;
-   transition: color 0.3s;
- }
+.botao-menu {
+  display: inline-block;
+  color: #ecf2d8;
+  font-weight: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #E27396;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 2px solid #E27396;
+  border-radius: 45%;
+  text-align: center;
+  transition: color 0.3s;
+}
 
+.botao-menu:focus {
+  border: 2.5px dotted #B3DEE2;
+  border-radius: 40%;
+  background-color: #E27396;
+  color: #B3DEE2;
+}
 
- .botao-menu:focus {
-   border: 2.5px dotted #B3DEE2;
-   border-radius: 40%;
-   background-color: #E27396;
-   color: #B3DEE2;
- }
-
- .botao-menu:hover {
-   color: #B3DEE2;
-   cursor: pointer;
- }
+.botao-menu:hover {
+  color: #B3DEE2;
+  cursor: pointer;
+}
 
  .menu a {
    text-align: center;
@@ -127,6 +127,30 @@
    margin-top: -1px;
    background-color: #f9f9f9;
  }
+
+.botao-hero {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #15a7b4;
+    color: #ecf2d8;
+    text-decoration: none;
+    border: 3px solid #15a7b4;
+    border-radius: 35%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.botao-hero:hover {
+    color: #ecf2d8;
+    border-color: #B3DEE2;
+    cursor: pointer;
+}
+
+.botao-hero:focus {
+    border: 10px dotted #B3DEE2;
+    color: #B3DEE2;
+}
 
  /* section -> destaques do mês */
  .sabores {
