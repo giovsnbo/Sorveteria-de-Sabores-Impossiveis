@@ -211,7 +211,7 @@
 
  .product-image {
    position: relative;
-   width: 120%;
+   width: 100%;
    height: auto;
    object-fit: contain;
    z-index: 2;
@@ -243,7 +243,7 @@
 
  /* section -> outros sabores */
  .outros-sabores {
-   background-color: #f9f9f9;
+  background-color: #f9f9f9;
   padding: 4rem 0;
 }
 
@@ -254,6 +254,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  justify-items: center;
 }
 
 .card-outros{
@@ -296,21 +297,22 @@
   font-size: 1rem;
   color: #2a2020;
   max-width: 200px;
-  line-height: 1.5%;
+  line-height: 1.5;
   margin-bottom: 0; 
 }
 
 /*section -> avaliacoes*/
 .avaliacoes {
-    padding: 80px 20px;
-    background-color: #f8fdfd;
+    padding: 80px 80px;
+    background-color: #fff1b7;
     text-align: center;
 }
 
 .avaliacoes h2 {
     font-size: 2.5rem;
+    font-family: "dynapuff";
     margin-bottom: 50px;
-    color: #333;
+    color: #ee5896;
 }
 
 .cards-avaliacoes {
@@ -343,7 +345,7 @@
 
 .card-avaliacao h3 {
     margin-bottom: 10px;
-    color: #333;
+    color: #c62769;
 }
 
 .estrelas {
@@ -357,16 +359,19 @@
     line-height: 1.6;
 }
 
+
+/*section -> sobre*/
 .sobre-nos {
-    background-color: #ffd38d;
+    background-color: #f0db86;
     padding: 80px 20px;
     text-align: center;
 }
 
 .sobre-nos h2 {
     font-size: 2.5rem;
+    font-family: "dynapuff";
     margin-bottom: 15px;
-    color: #333;
+    color: #f9f5e9;
 }
 
 .descricao {
@@ -482,7 +487,6 @@
   }
 }
 
-/* CELULARES */
 @media (max-width: 768px) {
 
   .nav {
@@ -550,7 +554,6 @@
   }
 }
 
-/* CELULARES PEQUENOS */
 @media (max-width: 480px) {
 
   .logo {
