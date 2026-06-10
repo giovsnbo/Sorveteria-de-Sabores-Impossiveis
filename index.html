@@ -1,35 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorveteria de Sabores Impossíveis</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
+    <header>
         <div class="container">
             <div class="nav">
-                <div class="logo">Gelido❅Incanto</div>
-                <nav class="menu">
-                    <button class="botao-menu" href="#inicio">Início</button>
-                    <button class="botao-menu" href="#sabores">Sabores</button>
-                    <button class="botao-menu" href="#sobre">Sobre</button>
-                    <button class="botao-menu" href="#contato">Contato</button>
-                </nav>
-            </div>
+                <div class="logo">Gelido✦Incanto</div>
+             <nav class="menu">
+                <a class="botao-menu" href="#inicio">Início</a>
+                <a class="botao-menu" href="#sabores">Sabores</a>
+                <a class="botao-menu" href="#avaliacoes">Avaliações</a>
+                <a class="botao-menu" href="#sobre">Sobre</a>
+                <a class="botao-menu" href="#contato">Contato</a>
+            </nav>
         </div>
     </header>
 
     <main>
-     <!-- Hero Section com Flexbox -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Desperte Seus Sentidos</h1>
-            <p>Cafés especiais selecionados para você começar o dia com energia e sabor</p>
-            <button class="btn-primary">Conheça Nossos Cafés</button>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Gelado e Irresistível</h1>
+                <p>Onde o sabooOOOr vira encanto.</p>
+                <a href="#sabores" class="botao-hero">Ver Sabores</a>
+            </div>
+        </section>
+
+        <div class="hero-wave"></div>
+
+        <section class="sabores" id="sabores">
+            <div class="container">
+                <h2 class="section-title">Favoritos do mês</h2>
+                <div class="cards">
+                    <!-- CARD 01 - feito -->
+                    <div class="sorvete-destaques">
+                        <div class="image-container">
+                            <div class="gradient-circle"></div>
+                            <img src="imagens/sorvetes/oi-sorvetinho.png" alt="sorvete Oi, sorvetinho"
+                                class="product-image">
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="card-title">Oi, sorvetinho</h2>
+                            <p class="card-descricao">
+                                Branco como a neve. Seu creme aveludado derrete lentamente, envolvendo o paladar em uma doçura prazerosa. Perfeito para dividir com sua cara-metade!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD 02 - feito -->
+                    <div class="sorvete-destaques">
+                        <div class="image-container">
+                            <div class="gradient-circle"></div>
+                            <img src="imagens//sorvetes/ventania-de-inverno.png" alt="sorvete ventania de inverno" class="product-image">
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="card-title">Ventania de Inverno</h2>
+                            <p class="card-descricao">
+                                A combinação perfeita do vento gelado de inverno e um sabor suave. Refresca o paladar e
+                                deixa seu dia mais leve.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD 03 -->
+                    <div class="sorvete-destaques">
+                        <div class="image-container">
+                            <div class="gradient-circle"></div>
+                            <img src="imagens/sorvetes/hora-do-banho.png" class="hora-banho" alt="Hora do Banho">
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="card-title">Hora do Banho</h2>
+                            <p class="card-descricao">
+                                A maior cremosidade de um sabonete em forma de sorvete com aroma de infância.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="outros-sabores">
+            <div class="container">
+                <h2 class="section-title">outros Sabores</h2>
+
+                <div class="cards-outros">
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/minecraft.png" alt="sorvete de minecraft" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Minecraft</h3>
+                        <p class="descricao-outros">Um sorvete de creme aveludado e sabor delicado, inspirado nas paisagens tranquilas do mundo de Minecraft. Simples, acolhedor e impossível de esquecer.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/luisinho.png" alt="sorvete de Usuário de React Native" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Usuário de React Native</h3>
+                        <p class="descricao-outros">Um sabor levemente adocicado, delicioso como uma build que compila de primeira.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/berry.png" alt="sorvete Candyland" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Candyland</h3>
+                        <p class="descricao-outros">Um creme sedoso de frutas vermelhas que combina doçura delicada e charme irresistível, criando uma experiência digna de um unicórnio estrelado.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/bloody-enimies.png" alt="sorvete de Bloody Enemies" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Bloody Enemies</h3>
+                        <p class="descricao-outros">Destilado do sangue daqueles que roubam temas alheios, seu creme vermelho e sedoso derrete lentamente, revelando um sabor intenso, sombrio e irresistível. Uma iguaria digna para os injustiçados.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/bolha.png" alt="sorvete de bolha" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Bolha</h3>
+                        <p class="descricao-outros">Leve, divertida e cheia de fantasia, esta criação combina um creme suave e aveludado com o sabor doce e nostálgico de chiclete de bola. Cada colherada é uma explosão de cor, alegria e encanto.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/cream-craft.png" alt="sorvete de papelao" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Cream Craft</h3>
+                        <p class="descricao-outros">Inspirado no material favorito das caixas, mas com um creme macio e sabor muito mais agradável.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/lua.png" alt="sorvete de lua" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Lua</h3>
+                        <p class="descricao-outros">Suave como o luar, este sorvete de creme aveludado derrete delicadamente no paladar, envolvendo os sentidos em uma doçura serena e encantadora.</p>
+                    </div>
+
+                    <div class="card-outros">
+                        <div class="container-outros">
+                            <img src="imagens/sorvetes/peido-unicornio.png" alt="sorvete de crista de Unicornio" class="image-outros">
+                        </div>
+                        <h3 class="title-outros">Crista de Unicornio</h3>
+                        <p class="descricao-outros">Colorido e mágico, combina um creme sedoso com notas doces e cintilantes que parecem saídas de um conto de fadas. Uma experiência tão rara quanto um unicórnio em pessoa.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes" id="avaliacoes">
+    <h2>Avaliações dos Clientes</h2>
+
+    <div class="cards-avaliacoes">
+
+        <div class="card-avaliacao">
+            <img src="imagens/jenifer.jpg" alt="Cliente">
+            <h3>Jenifer</h3>
+            <div class="estrelas">★★★★★</div>
+            <p>
+                Muito bom. Para quem pensa em experimentar, recomendo o sabor "Usuário  de React Native", o meu favorito. 🤤
+            </p>
         </div>
-    </section>
-</main>
+
+        <div class="card-avaliacao">
+            <img src="imagens/totoria.jpg" alt="Cliente">
+            <h3>Anna Vitória</h3>
+            <div class="estrelas">★★★★★</div>
+            <p>
+                Nossa, além do sorvete ser bom, o HTML é lindo. Bem melhor que o meu site... 😢😢
+            </p>
+        </div>
+
+        <div class="card-avaliacao">
+            <img src="imagens/polar.png" alt="Cliente">
+            <h3>Polar</h3>
+            <div class="estrelas">★★★★★</div>
+            <p>
+                Polar gostou. Polar vai repetir.
+            </p>
+        </div>
+
+        <div class="card-avaliacao">
+            <img src="imagens/diego.jpg" alt="Cliente">
+            <h3>Diego Max, o Mago</h3>
+            <div class="estrelas">★★★★★</div>
+            <p>
+                Esse sorvete revigorou todo o meu mana, me sinto como novo! Pensando em dar nota MB na média final da Cibelle e da Giovanna Sinbo. 
+            </p>
+        </div>
+
+    </div>
+</section>
+
+        <section class="sobre-nos" id="sobre">
+    <div class="container">
+        <h2>Sobre Nós</h2>
+        <p class="descricao">
+            Nossa equipe é formada por uma dupla de profissionais apaixonadas por criar os melhores sorvetes artesanais.
+        </p>
+
+        <div class="chefs">
+               <div class="chef-card">
+                <img src="imagens/hachiware.png" alt="Chef Giovanna">
+                <h3>Giovanna</h3>
+                <span>Especialista em Gelatos</span>
+            </div>
+
+            <div class="chef-card">
+                <img src="imagens/chiikawa.png" alt="Chef Cibelle">
+                <h3>Cibelle</h3>
+                <span>Mestre Sorveteira</span>
+            </div>
+
+            </div>
+        </div>
+    </div> 
+</section>
+
+    </main>
+
+
+    <footer>
+        <div class="container" id="contato">
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <h4>Gelido Incanto</h4>
+                    <p>Gelado e Irresistível. <br>
+                        Onde o sabooOOOr vira encanto.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contatos</h4>
+                    <p>(13) 99666-7777</p>
+                    <p>suporte.gelidoincanto@4catsCompany.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <p>Instagram | YouTube | TikTok </p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <p>©2026 Gelido Incanto. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
 </body>
-</html>
+
+</html>§
