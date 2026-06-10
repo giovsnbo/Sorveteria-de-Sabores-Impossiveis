@@ -113,7 +113,7 @@
  }
 
  .hero-content p {
-   font-size: 1.3rem;
+   font-size: 1.2rem;
    margin-bottom: 2rem;
  }
 
@@ -130,14 +130,14 @@
 
 .botao-hero {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
+    margin-top: 10px;
+    padding: 8px 60px;
     background-color: #15a7b4;
     color: #ecf2d8;
     text-decoration: none;
-    border: 3px solid #15a7b4;
-    border-radius: 35%;
-    font-size: 1rem;
+    border: 1px solid #27bac7;
+    border-radius: 17px;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
@@ -179,12 +179,11 @@
    border-radius: 40px;
    padding: 30px 20px 50px 20px;
    position: relative;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
    display: flex;
    flex-direction: column;
    align-items: center;
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-   transition: transform 0.3s;
+   transition: transform 0.3s ease;
  }
 
  .sorvete-destaques:hover {
@@ -266,7 +265,7 @@
 }
 
 .card-outros:hover {
-  transform: scale(1.05);
+ transform: translateY(-10px);
 }
 
 .container-outros {
@@ -294,13 +293,14 @@
 
 .descricao-outros {
   font-family: "Urbanist";
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #2a2020;
   max-width: 200px;
-  line-height: 1.4;
+  line-height: 1.5%;
   margin-bottom: 0; 
 }
 
+/*section -> avaliacoes*/
 .avaliacoes {
     padding: 80px 20px;
     background-color: #f8fdfd;
@@ -323,12 +323,14 @@
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.3s;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
 }
 
 .card-avaliacao:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
 }
 
 .card-avaliacao img {
@@ -385,12 +387,14 @@
     padding: 20px;
     width: 280px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
 .chef-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
 }
 
 .chef-card img {
