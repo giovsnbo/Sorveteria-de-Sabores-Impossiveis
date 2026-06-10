@@ -1,3 +1,4 @@
+
  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
  /*cinzel decorative */
  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
@@ -31,24 +32,6 @@
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  }
 
-<<<<<<< HEAD
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #faf9f6;
-}
-
-.header {
-  background-color: #eeeade;
-  color:#faf9f6;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-=======
  /* navbar */
  .nav {
    display: flex;
@@ -65,7 +48,6 @@ body {
    font-weight: bold;
    color: #ecf2d8;
  }
->>>>>>> 2ef859e2bd173d1a202a85e5c514b681bf5fe43d
 
  .menu {
   display: flex;
@@ -75,17 +57,12 @@ body {
 }
 
 .botao-menu {
-<<<<<<< HEAD
-  color: #2d2411;
-  background-color: #faf9f6;
-=======
   display: inline-block;
   color: #ecf2d8;
   font-weight: normal;
   font-size: 1rem;
   text-decoration: none;
   background-color: #E27396;
->>>>>>> 2ef859e2bd173d1a202a85e5c514b681bf5fe43d
   width: 100%;
   max-width: 400px;
   padding: 8px;
@@ -489,6 +466,7 @@ body {
    padding-top: 3rem;
    color: #f9f5e9;
  }
+
 
 @media (max-width: 1024px) {
 
