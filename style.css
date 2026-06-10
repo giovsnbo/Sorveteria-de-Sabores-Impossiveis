@@ -49,39 +49,39 @@
  }
 
  .menu {
-   display: flex;
-   gap: 2rem;
-   justify-content: center;
-   align-items: center;
- }
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
 
- .botao-menu {
-   color: #ecf2d8;
-   font-weight: normal;
-   font-size: 1rem;
-   background-color: #E27396;
-   width: 100%;
-   max-width: 400px;
-   padding: 8px;
-   border: 2px solid #E27396;
-   border-radius: 45%;
-   text-align: center;
-   align-items: center;
-   transition: color 0.3s;
- }
+.botao-menu {
+  display: inline-block;
+  color: #ecf2d8;
+  font-weight: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #E27396;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 2px solid #E27396;
+  border-radius: 45%;
+  text-align: center;
+  transition: color 0.3s;
+}
 
+.botao-menu:focus {
+  border: 2.5px dotted #B3DEE2;
+  border-radius: 40%;
+  background-color: #E27396;
+  color: #B3DEE2;
+}
 
- .botao-menu:focus {
-   border: 2.5px dotted #B3DEE2;
-   border-radius: 40%;
-   background-color: #E27396;
-   color: #B3DEE2;
- }
-
- .botao-menu:hover {
-   color: #B3DEE2;
-   cursor: pointer;
- }
+.botao-menu:hover {
+  color: #B3DEE2;
+  cursor: pointer;
+}
 
  .menu a {
    text-align: center;
@@ -127,6 +127,30 @@
    margin-top: -1px;
    background-color: #f9f9f9;
  }
+
+.botao-hero {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #15a7b4;
+    color: #ecf2d8;
+    text-decoration: none;
+    border: 3px solid #15a7b4;
+    border-radius: 35%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.botao-hero:hover {
+    color: #ecf2d8;
+    border-color: #B3DEE2;
+    cursor: pointer;
+}
+
+.botao-hero:focus {
+    border: 10px dotted #B3DEE2;
+    color: #B3DEE2;
+}
 
  /* section -> destaques do mês */
  .sabores {
@@ -277,6 +301,115 @@
   margin-bottom: 0; 
 }
 
+.avaliacoes {
+    padding: 80px 20px;
+    background-color: #f8fdfd;
+    text-align: center;
+}
+
+.avaliacoes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.cards-avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card-avaliacao {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card-avaliacao:hover {
+    transform: translateY(-8px);
+}
+
+.card-avaliacao img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-avaliacao h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.estrelas {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.card-avaliacao p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.sobre-nos {
+    background-color: #ffd38d;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.descricao {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #666;
+}
+
+.chefs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.chef-card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.chef-card:hover {
+    transform: translateY(-8px);
+}
+
+.chef-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.chef-card h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.chef-card span {
+    color: #15a7b4;
+    font-weight: bold;
+}
+
  /*footer*/
  footer {
    background-color: #52c4ce;
@@ -315,3 +448,135 @@
    padding-top: 3rem;
    color: #f9f5e9;
  }
+
+ /* TABLETS */
+@media (max-width: 1024px) {
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .cards-avaliacoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chefs {
+    gap: 20px;
+  }
+
+  .chef-card {
+    width: 250px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-left: 0;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 768px) {
+
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .botao-menu {
+    max-width: 140px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+    padding: 20px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cards-avaliacoes {
+    grid-template-columns: 1fr;
+  }
+
+  .card-avaliacao {
+    width: 100%;
+  }
+
+  .chef-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .cards-outros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-left: 0;
+  }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .cards-outros {
+    grid-template-columns: 1fr;
+  }
+
+  .sorvete-destaques {
+    width: 100%;
+  }
+
+  .image-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .product-image {
+    width: 110%;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
